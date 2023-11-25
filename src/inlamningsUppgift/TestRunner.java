@@ -1,4 +1,4 @@
-package InlamningsUppgift;
+package inlamningsUppgift;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package InlamningsUppgift;
+package inlamningsUppgift;
 
 import java.util.Scanner;
 
@@ -64,11 +64,22 @@ public class TestProcessor {
     // Hämta det längsta ordet
     public String getLongestWord(String text) {
         findingMyLongestWord = text.split("\\s+");
+        return findLongestWord(findingMyLongestWord);
+    }
+
+    private String findLongestWord(String[] words) {
+        longestWord = "";
+        for (String word : words) {
+            if (longestWord.length() < word.length()) {
+                longestWord = word;
+            }
+        }
+        /*findingMyLongestWord = text.split("\\s+");
         for (int i = 0; i < findingMyLongestWord.length; i++) {
             if (longestWord.length() < findingMyLongestWord[i].length()) {
                 longestWord = findingMyLongestWord[i];
             }
-        }
+        }*/
         return longestWord;
     }
 

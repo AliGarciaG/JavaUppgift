@@ -2,7 +2,7 @@
 // Programmet hanterar inläsning av text och kan räkna antalet inmatade ord, bokstäver, rader, etc.
 // Version 1.0
 // Datum: 2023-11-20
-package InlamningsUppgift;
+package inlamningsUppgift;
 
 import java.util.Scanner;
 
