@@ -43,7 +43,7 @@ public class TestProcessor {
             return 0;
         } else {
             allTheWords = allTheWords.trim();
-            allTheWordsInArray = allTheWords.split("\\s+");
+            allTheWordsInArray = allTheWords.split("\\s+");  //sätter alla ord i en array, hanterar extra blanksteg
             numberOfWords = allTheWordsInArray.length;
             return numberOfWords;
         }
@@ -74,12 +74,7 @@ public class TestProcessor {
                 longestWord = word;
             }
         }
-        /*findingMyLongestWord = text.split("\\s+");
-        for (int i = 0; i < findingMyLongestWord.length; i++) {
-            if (longestWord.length() < findingMyLongestWord[i].length()) {
-                longestWord = findingMyLongestWord[i];
-            }
-        }*/
+     
         return longestWord;
     }
 
